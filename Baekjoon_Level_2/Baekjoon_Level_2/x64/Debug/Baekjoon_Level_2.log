@@ -1,0 +1,3 @@
+﻿  level2_7.c
+C:\Users\0109y\OneDrive\문서\Baekjoon\Baekjoon_Level_2\Baekjoon_Level_2\level2_7.c(6,27): warning C4101: 'same' :참조되지 않은 지역 변수입니다.
+  Baekjoon_Level_2.vcxproj -> C:\Users\0109y\OneDrive\문서\Baekjoon\Baekjoon_Level_2\x64\Debug\Baekjoon_Level_2.exe
