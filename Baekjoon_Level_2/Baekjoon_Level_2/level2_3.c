@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// À±³â
 /*int main()
 {
 	int LeapYear;

@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 두 수 비교하기
 int main()
 {
 	int A, B;

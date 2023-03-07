@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 최소, 최대
 int main()
 {
 	int N, arr[1000000], Max = -1000000, Min = 1000000;

@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 개수 세기
 int  main()
 {
 	int N, v, arr[100], total = 0;

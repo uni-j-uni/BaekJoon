@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// гу
 int main()
 {
 	int N, Sum = 0;

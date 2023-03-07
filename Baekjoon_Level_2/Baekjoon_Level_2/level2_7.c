@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 주사위 세개
 int main()
 {
 	int Dice1, Dice2, Dice3;

@@ -1,50 +1,42 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 과제 안 내신 분..?
 /*int main()
 {
-	int N, max = 0;
-	double sum = 0, score[1000];
+	int student[30] = { 0, }, submit;
 
-	scanf("%d", &N);
+	for (int i = 0; i < 30; i++)
+		student[i] = i + 1;
 
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < 28; i++)
 	{
-		scanf("%lf", &score[i]);
-		
-		if (score[i] > max)
-			max = score[i];
-	}
+		scanf("%d", &submit);
 
-	for (int i = 0; i < N; i++)
-	{
-		score[i] = score[i] * 100 / max;
-		sum += score[i];
+		for (int i = 0; i < 30; i++)
+			if (submit == student[i])
+				student[i] = 0;
 	}
-
-	printf("%lf", sum / N);
+	
+	for (int i = 0; i < 30; i++)
+		if (student[i] != 0)
+			printf("%d\n", i + 1);
 
 	return 0;
 }*/
 
 int main()
 {
-	int N, max = 0;
-	double sum = 0, score[1000];
+	int student[30] = { 0, }, submit;
 
-	scanf("%d", &N);
-
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < 28; i++)
 	{
-		scanf("%lf", &score[i]);
-
-		if (score[i] > max)
-			max = score[i];
-
-		sum += score[i];
+		scanf("%d", &submit);
+		student[submit - 1] = submit;
 	}
 
-	printf("%lf", sum / max * 100 / N);
+	for (int i = 0; i < 30; i++)
+		if (student[i] == 0)
+			printf("%d\n", i + 1);
 
 	return 0;
 }

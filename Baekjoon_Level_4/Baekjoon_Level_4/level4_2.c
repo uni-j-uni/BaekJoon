@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// X보다 작은 수
 int main()
 {
 	int N, X, A[10000] = { 0, };

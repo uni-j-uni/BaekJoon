@@ -1,21 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// A + B - 4
 int main()
 {
-	int N, cycle = 1;
+	int A, B;
 
-	scanf("%d", &N);
-
-	int M = (N % 10) * 10 + (((N / 10) + (N % 10)) % 10);
-
-	while (M != N)
-	{
-		cycle++;
-		M = (M % 10) * 10 + (((M / 10) + (M % 10)) % 10);
-	}
-
-	printf("%d", cycle);
+	while (scanf("%d %d", &A, &B) != EOF)
+		printf("%d\n", A + B);
 
 	return 0;
 }

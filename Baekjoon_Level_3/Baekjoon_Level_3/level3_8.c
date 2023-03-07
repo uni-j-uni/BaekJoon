@@ -1,17 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// A + B - 8
 int main()
 {
-	int N;
+	int T, A, B;
 
-	scanf("%d", &N);
+	scanf("%d", &T);
 
-	for (int i = 1; i <= N; i++)
+	for (int i = 1; i <= T; i++)
 	{
-		for (int j = 1; j <= i; j++)
-			printf("*");
-		printf("\n");
+		scanf("%d %d", &A, &B);
+		printf("Case #%d: %d + %d = %d\n", i, A, B, A + B);
 	}
 
 	return 0;

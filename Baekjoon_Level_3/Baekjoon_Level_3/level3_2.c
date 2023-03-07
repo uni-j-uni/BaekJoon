@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// A + B - 3
 int main()
 {
 	int A, B, T;

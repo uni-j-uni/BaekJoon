@@ -3,15 +3,14 @@
 
 int main()
 {
-	int T, A, B;
+	int N;
 
-	scanf("%d", &T);
+	scanf("%d", &N);
 
-	for (int i = 0; i < T; i++)
-	{
-		scanf("%d %d", &A, &B);
-		printf("%d\n", A + B);
-	}
+	for (int i = 0; i < N / 4; i++)
+		printf("long ");
+
+	printf("int");
 
 	return 0;
 }

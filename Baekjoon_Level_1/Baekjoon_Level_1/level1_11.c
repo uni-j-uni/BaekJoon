@@ -1,18 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// ²¿¸¶ Á¤¹Î
 int main()
 {
-	int num1, num2;
+	long long int A, B, C;
 
-	scanf("%d %d", &num1, &num2);
-
-	int result1 = (num2 % 10) * num1, result2 = (num2 / 10) % 10 * num1, result3 = (num2 / 100) * num1;
-
-	printf("%d\n", result1);
-	printf("%d\n", result2);
-	printf("%d\n", result3);
-	printf("%d\n", result1 + result2 * 10 + result3 * 100);
+	scanf("%lld %lld %lld", &A, &B, &C);
+	printf("%lld", A + B + C);
 
 	return 0;
 }

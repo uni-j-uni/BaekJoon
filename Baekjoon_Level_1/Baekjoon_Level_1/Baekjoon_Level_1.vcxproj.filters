@@ -42,19 +42,22 @@
     <ClCompile Include="level1_9.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="level1_10.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="level1_11.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="level1_12.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="level1_13.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="level1_14.c">
+    <ClCompile Include="level2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level1_10.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level1_11.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

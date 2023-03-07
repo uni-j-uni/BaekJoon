@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// ÃÖ´ñ°ª
 int main()
 {
 	int arr[9], max = 0, num = 0;

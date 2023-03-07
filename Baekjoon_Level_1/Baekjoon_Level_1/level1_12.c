@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// °í¾çÀÌ
 int main()
 {
 	printf("\\    /\\\n");

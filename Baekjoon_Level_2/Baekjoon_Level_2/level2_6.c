@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// ¿Àºì ½Ã°è
 /*int main()
 {
 	int H, M, cook;

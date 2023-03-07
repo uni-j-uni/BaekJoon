@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 사분면 고르기
 /*int main()
 {
 	int x, y;

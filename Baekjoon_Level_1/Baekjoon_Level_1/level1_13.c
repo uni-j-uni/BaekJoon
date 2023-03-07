@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// °³
 int main()
 {
 	printf("|\\_/|\n");
