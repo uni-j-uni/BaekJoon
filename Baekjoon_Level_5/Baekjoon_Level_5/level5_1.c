@@ -1,9 +1,14 @@
-long long sum(int* a, int n)
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+// 문자와 문자열
+int main()
 {
-	long long sum = 0;
+	char S[1001];
+	int i;
 
-	for (int i = 0; i < n; i++)
-		sum += a[i];
+	scanf("%s %d", S, &i);
 
-	return sum;
+	printf("%c", S[i - 1]);
+
+	return 0;
 }

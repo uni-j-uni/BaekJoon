@@ -1,25 +1,36 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 바구니 순서 바꾸기
 int main()
 {
-	int T;
+	int Basket[100], Change[100], N = 0, M = 0;
 
-	scanf("%d", &T);
+	scanf("%d %d", &N, &M);
 
-	for (int i = 0; i < T; i++)
+	for (int a = 0; a < N; a++)
 	{
-		int R = 0;
-		char S[20] = "", P[20];
-
-		scanf("%d %s", &R, S);
-		
-		for (int j = 0; S[j] != NULL; j++)
-			for (int k = 0; k < R; k++)
-				printf("%c", S[j]);
-
-		printf("\n");
+		Basket[a] = a + 1;
+		Change[a] = a + 1;
 	}
+
+	for (; M > 0; M--)
+	{
+		int i = 0, j = 0, k = 0;
+
+		scanf("%d %d %d", &i, &j, &k);
+
+		for (int b = i, c = k; c <= j; c++)
+		{
+			Change[b - 1] = Basket[c - 1];
+			b++;
+		}
+		
+		for (; i < k; i++) Change[j - k + i] = Basket[i - 1];
+
+		for (int a = 0; a < N; a++) Basket[a] = Change[a];
+	}
+
+	for (int a = 0; a < N; a++) printf("%d ", Basket[a]);
 
 	return 0;
 }

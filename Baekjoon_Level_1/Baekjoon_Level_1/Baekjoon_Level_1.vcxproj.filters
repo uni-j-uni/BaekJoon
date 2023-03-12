@@ -48,12 +48,6 @@
     <ClCompile Include="level1_13.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="level2.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="level.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="level1_10.c">
       <Filter>소스 파일</Filter>
     </ClCompile>

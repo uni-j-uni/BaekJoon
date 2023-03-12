@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+// 코딩은 체육과목 입니다
 int main()
 {
 	int N;

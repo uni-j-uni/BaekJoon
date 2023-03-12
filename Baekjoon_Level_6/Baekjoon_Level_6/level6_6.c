@@ -1,23 +1,34 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <string.h>
-
+#include <ctype.h>
+// 단어 공부
 int main()
 {
-	char sentence[1000000];
-	int cnt = 0;
-	
-	gets(sentence);
+	char word[1000000] = "";
+	int alphabet[26] = { 0, }, best = 0, same = 0, num = 0;
 
-	char* ptr = strtok(sentence, " ");
+	scanf("%s", word);
 
-	while (ptr != NULL)
-	{
-		cnt++;
-		ptr = strtok(NULL, " ");
-	}
+	for (int i = 0; word[i] != NULL; i++)
+		for (int j = 0; j < 26; j++)
+		{
+			if (toupper(word[i]) == j + 65)
+				alphabet[j]++;
+			if (alphabet[j] > best)
+				best = alphabet[j];
+		}
 
-	printf("%d", cnt);
+	for (int j = 0; j < 26; j++)
+		if (alphabet[j] == best)
+		{
+			num = j;
+			same++;
+		}
+
+	if (same == 1)
+		printf("%c ", num + 65);
+	else
+		printf("?");
 
 	return 0;
 }

@@ -1,47 +1,57 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <string.h>
-
+// 별 찍기 - 7
 /*int main()
 {
-	char S[101] = "";
-	int alphabet[26] = { 0, };
+	int N, M, P = 1;
 
-	scanf("%s", S);
+	scanf("%d", &N);
 
-	for (int i = 0; i < 26; i++)
+	M = N - 1;
+
+	for (int i = 0; i < N; i++)
 	{
-		if (alphabet[i] == 0)
-			alphabet[i] -= 1;
+		for (int j = 0; j < M; j++)
+			printf(" ");
+		M--;
 
-		for (int j = 0; j < 100; j++)
-		{
-			if (alphabet[i] != -1)
-				break;
-			if ((int)S[j] == i + 97)
-				alphabet[i] = j;
-		}
+		for (int k = 0; k < P; k++)
+			printf("*");
+		P += 2;
 
-		printf("%d ", alphabet[i]);
+		printf("\n");
+	}
+	P -= 2;
+	for (int i = 0; i < N - 1; i++)
+	{
+		for (int j = 0; j <= i; j++)
+			printf(" ");
+
+		P -= 2;
+		for (int k = 0; k < P; k++)
+			printf("*");
+
+		printf("\n");
 	}
 
 	return 0;
 }*/
 
-int main()     //다른 사람 코드 고침
+void star(int N, int M)
 {
-	char S[100];
-	gets_s(S);
-	int alphabet[26];
+	for (int j = 0; j < N - M; j++) printf(" ");
+	for (int j = 1; j < M * 2; j++) printf("*");
 
-	for (int i = 0; i < 26; i++)
-		alphabet[i] = -1;
+	printf("\n");
+}
 
-	for (int i = strlen(S) - 1; i > -1; i--)
-		alphabet[S[i] - 97] = i;
+int main()
+{
+	int N;
+	scanf("%d", &N);
 
-	for (int i = 0; i < 26; i++)
-		printf("%d ", alphabet[i]);
+	for (int i = 1; i <= N; i++) star(N, i);
+	for (int i = N - 1; i >= 1; i--) star(N, i);
 
 	return 0;
 }

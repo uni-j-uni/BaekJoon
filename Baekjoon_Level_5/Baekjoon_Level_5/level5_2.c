@@ -1,30 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
-int self_num[10000] = { 0, };
-
+#include <string.h>
+// 단어 길이 재기
 int main()
 {
-	for (int i = 1; i <= 10000; i++)
-	{
-		self_num[add(i) - 1] = add(i);
+	char S[101];
 
-		if (self_num[i - 1] == 0)
-			printf("%d\n", i);
-	}
+	scanf("%s", S);
+
+	printf("%d", strlen(S));
 
 	return 0;
-}
-
-int add(int n)
-{
-	int result = n;
-
-	while (n > 0)
-	{
-		result += n % 10;
-		n /= 10;
-	}
-
-	return result;
 }

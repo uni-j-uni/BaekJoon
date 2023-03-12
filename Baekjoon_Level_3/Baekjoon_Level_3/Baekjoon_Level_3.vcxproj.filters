@@ -24,7 +24,7 @@
     <ClCompile Include="level3_3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="level.c">
+    <ClCompile Include="level3_4.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="level3_6.c">
@@ -46,9 +46,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="level3_12.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="level2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="level3_5.c">
