@@ -1,20 +1,23 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-// 벌집
+// 배수와 약수
 int main()
 {
-	int N, cnt, num = 1;
+	int num1, num2;
 
-	scanf("%d", &N);
-
-	for (cnt = 1; num < N; cnt++)
+	while (1)
 	{
-		int room = 6;
+		scanf("%d %d", &num1, &num2);
 
-		room *= cnt;
-		num += room;
+		if (num1 == 0 && num2 == 0)
+			break;
+		else if (num2 % num1 == 0)
+			printf("factor\n");
+		else if (num1 % num2 == 0)
+			printf("multiple\n");
+		else
+			printf("neither\n");
 	}
-	printf("%d", cnt);
 
 	return 0;
 }
