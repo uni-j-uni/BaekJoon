@@ -24,5 +24,14 @@
     <ClCompile Include="level8_3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="level8_4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level8_5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level8_6.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
